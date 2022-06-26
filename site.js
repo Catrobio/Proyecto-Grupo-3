@@ -19,3 +19,27 @@ $(document).ready(function(){
       });
     });
   })
+
+  //Agregado para el Modal acceso 
+  $(".open").on("click", function(){
+    $(".overlay, #dvacceso").addClass("active");
+  });
+
+  //modal registro
+  $("#registro").on("click", function(){
+    $(".overlay, #dvregistro").addClass("active");
+    $(".overlay, #dvacceso").removeClass("active");
+  });
+  
+
+  //Cierra todos los modals
+  $(".close, .overlay").on("click", function(){
+     $(".overlay, .modal").removeClass("active");
+  });
+  
+  //cierra el modal con la tecla Esc
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+      $(".overlay, .modal").removeClass("active");
+    }
+  });

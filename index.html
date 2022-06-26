@@ -14,9 +14,8 @@
 
 <body>
 
-
   <div id="wrap">
-    <a href="#" class="hb">
+    <a href="#" class="hb open">
       <div class="c">
         <img src="Images/imagen9.jpg" alt="" />
         <div class="txt">
@@ -28,7 +27,7 @@
     <div class="fullBg">
       <img src="Images/Imagen2.jpg" alt="" />
     </div>
-    <a href="#" class="hb">
+    <a href="#" class="hb open">
       <div class="c">
         <img src="Images/Imagen8.jpg" alt="" />
         <div class="txt">
@@ -40,6 +39,29 @@
     <div class="fullBg">
       <img src="Images/Imagen1.jpg" alt="" />
     </div>
+  </div>
+
+  <div id="dvacceso"  class="modal">
+    <h2>Ingrese al sistema</h2>
+    <form id="acceso" action="">
+      <label for="usuario"> Email: </label><input type="text" name="usuario" id="usuario" required>
+      <label for="password"> Contraseña: </label><input type="password" name="password" id="password" required>
+      <button type="submit" class="ingresar">Ingresar</button> <button class="close">Cancelar</button>
+    </form>
+    <button id="registro" class="registrar">Registrame</button>
+  </div>
+
+  <div id="dvregistro" class="modal">
+    <h2>Registrarme</h2>
+    <form id="frmregistro" action="">
+      <label for="email"> Email: </label><input type="email" name="email" id="email" required>
+      <label for="nombre"> Nombre: </label><input type="text" name="nombre" id="nombre" required>
+      <label for="apelldip"> Apellido: </label><input type="text" name="apelldip" id="apelldip" required>
+      <label for="documento"> Documento: </label><input type="text" name="documento" id="documento" required>
+      <label for="contraseña"> Contraseña: </label><input type="password" name="contraseña" id="contraseña" required>
+      <label for="recontraseña"> Repetir: </label><input type="password" name="recontraseña" id="recontraseña" required>
+      <button type="submit" class="ingresar">Guardar</button> <button class="close">Cancelar</button>
+    </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="site.js"></script>

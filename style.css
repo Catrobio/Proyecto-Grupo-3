@@ -109,3 +109,107 @@ h1 {
   padding:0px;
 }
 
+/*Agreado para el modal y el boton*/
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: .5s ease;
+	z-index: -1;
+}
+
+.overlay.active {
+	opacity: 1;
+	z-index: 2;
+}
+
+.modal {
+	max-height: calc(100% - 100px);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 500px;
+	transform: translate(-50%, -50%);
+	color: #4a5666;
+	background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.modal h2 {
+	margin: 0;
+	font-weight: 400;
+	padding: 1rem;
+	border-bottom: 1px solid #DDE0E7;
+}
+
+.modal p {
+	padding: 1rem;
+}
+
+.modal.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+button {
+	display: inline-block;
+	background: rgba(10, 20, 30, .3);
+	border: 1px solid transparent;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	margin: .25rem 0;
+	vertical-align: middle;
+	line-height: 1;
+	overflow: visible;
+	cursor: pointer;
+}
+
+button:hover {
+	border: 1px solid rgba(255, 255, 255, .8);
+	color: white;
+	background: rgba(255, 255, 255, .1);
+}
+
+button.close {
+	margin: 10px;
+	background: #FC6468;
+}
+
+button.close:hover {
+	border: 1px solid #FC6468;
+	color: #FC6468;
+	background: transparent;
+}
+
+button.ingresar {
+	margin: 10px;
+	background: #4a5666;
+}
+
+button.ingresar:hover {
+	border: 1px solid #4a5666;
+	color: #4a5666;
+	background: transparent;
+}
+
+button.registrar {
+	margin: 10px;
+	background: blueviolet;
+}
+
+button.registrar:hover {
+	border: 1px solid blueviolet;
+	color: blueviolet;
+	background: transparent;
+}
